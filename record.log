@@ -1,0 +1,31 @@
+2021-09-09 11:15:53,272 INFO werkzeug Thread-2 :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-09-09 11:15:57,488 DEBUG helloflask Thread-3 : Invalid password
+2021-09-09 11:15:57,497 INFO werkzeug Thread-3 : 127.0.0.1 - - [09/Sep/2021 11:15:57] "POST /flash_login HTTP/1.1" 200 -
+2021-09-09 11:16:12,329 DEBUG helloflask Thread-4 : Success
+2021-09-09 11:16:12,330 INFO werkzeug Thread-4 : 127.0.0.1 - - [09/Sep/2021 11:16:12] "[32mPOST /flash_login HTTP/1.1[0m" 302 -
+2021-09-09 11:16:12,412 INFO werkzeug Thread-5 : 127.0.0.1 - - [09/Sep/2021 11:16:12] "GET /flash_index HTTP/1.1" 200 -
+2021-09-09 12:30:41,843 INFO werkzeug MainThread :  * Detected change in 'E:\\vscode\\helloflask\\helloflaskrest\\app.py', reloading
+2021-09-09 12:30:45,272 WARNING werkzeug MainThread :  * Debugger is active!
+2021-09-09 12:30:45,275 INFO werkzeug MainThread :  * Debugger PIN: 600-017-369
+2021-09-09 12:30:45,383 INFO werkzeug Thread-2 :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-09-09 12:30:46,347 INFO werkzeug MainThread :  * Detected change in 'E:\\vscode\\helloflask\\helloflaskrest\\app.py', reloading
+2021-09-09 12:30:46,966 WARNING werkzeug MainThread :  * Debugger is active!
+2021-09-09 12:30:46,969 INFO werkzeug MainThread :  * Debugger PIN: 600-017-369
+2021-09-09 12:30:46,997 INFO werkzeug Thread-2 :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-09-09 12:30:59,180 INFO werkzeug MainThread :  * Detected change in 'E:\\vscode\\helloflask\\helloflaskrest\\app.py', reloading
+2021-09-09 12:30:59,806 WARNING werkzeug MainThread :  * Debugger is active!
+2021-09-09 12:30:59,810 INFO werkzeug MainThread :  * Debugger PIN: 600-017-369
+2021-09-09 12:30:59,838 INFO werkzeug Thread-2 :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-09-09 12:31:28,259 INFO werkzeug MainThread :  * Detected change in 'E:\\vscode\\helloflask\\helloflaskrest\\app.py', reloading
+2021-09-09 12:31:28,884 WARNING werkzeug MainThread :  * Debugger is active!
+2021-09-09 12:31:28,887 INFO werkzeug MainThread :  * Debugger PIN: 600-017-369
+2021-09-09 12:31:28,915 INFO werkzeug Thread-2 :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-09-09 12:34:37,612 INFO werkzeug MainThread :  * Detected change in 'E:\\vscode\\helloflask\\helloflaskrest\\app.py', reloading
+2021-09-09 12:34:38,231 WARNING werkzeug MainThread :  * Debugger is active!
+2021-09-09 12:34:38,234 INFO werkzeug MainThread :  * Debugger PIN: 600-017-369
+2021-09-09 12:34:38,265 INFO werkzeug Thread-2 :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-09-09 12:35:18,840 INFO werkzeug MainThread :  * Detected change in 'E:\\vscode\\helloflask\\helloflaskrest\\app.py', reloading
+2021-09-09 12:35:19,478 WARNING werkzeug MainThread :  * Debugger is active!
+2021-09-09 12:35:19,482 INFO werkzeug MainThread :  * Debugger PIN: 600-017-369
+2021-09-09 12:35:19,510 INFO werkzeug Thread-2 :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-09-09 12:37:00,128 INFO werkzeug Thread-3 : 127.0.0.1 - - [09/Sep/2021 12:37:00] "[33mPOST /item/chair HTTP/1.1[0m" 404 -
