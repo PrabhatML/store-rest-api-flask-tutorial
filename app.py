@@ -16,7 +16,9 @@ if uri.startswith("postgres://"):
 
 app = Flask(__name__)
 app.secret_key = "secret"
+
 app.config['SQLALCHEMY_DATABASE_URI'] = uri
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 api = Api(app)
 jwt = JWT(app,authenticate,identity)  # /auth
