@@ -9,23 +9,25 @@ from resources.store import Store,StoreList
 
 import re
 
+
+app = Flask(__name__)
+app.secret_key = "secret"
+
 uri = os.getenv("DATABASE_URL",'sqlite:///data.db')  # or other relevant config var
 if uri.startswith("postgres://"):
     uri = uri.replace("postgres://", "postgresql://", 1)
 # rest of connection code using the connection string `uri`
 
-app = Flask(__name__)
-app.secret_key = "secret"
-
 app.config['SQLALCHEMY_DATABASE_URI'] = uri
-
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['PROPAGATE_EXCEPTIONS'] = True
 api = Api(app)
 jwt = JWT(app,authenticate,identity)  # /auth
 
-# @app.before_first_request
-# def create_tables():
-#     db.create_all()
+if not uri.startswith("postgres://"):
+    @app.before_first_request
+    def create_tables():
+        db.create_all()
 
 api.add_resource(ItemResource,"/item/<string:name>")
 api.add_resource(ItemListResource,"/items")
