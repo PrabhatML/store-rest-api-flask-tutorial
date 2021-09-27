@@ -3,7 +3,7 @@ from flask import Flask,request
 from flask_restful import Resource,Api
 from flask_jwt import JWT
 from security import authenticate,identity
-from resources.user import UserRegister
+from resources.user import UserRegister,User
 from resources.item import ItemListResource,ItemResource
 from resources.store import Store,StoreList
 
@@ -12,6 +12,7 @@ import re
 
 app = Flask(__name__)
 app.secret_key = "secret"
+app.config['PROPAGATE_EXCEPTIONS'] = True
 
 uri = os.getenv("DATABASE_URL",'sqlite:///data.db')  # or other relevant config var
 if uri.startswith("postgres://"):
@@ -34,6 +35,7 @@ api.add_resource(ItemListResource,"/items")
 api.add_resource(UserRegister,"/register")
 api.add_resource(Store,"/store/<string:name>")
 api.add_resource(StoreList,"/stores")
+api.add_resource(User,"/user/<int:user_id>")
 
 if __name__ == '__main__':
     from db import db
