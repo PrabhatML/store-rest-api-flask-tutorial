@@ -13,6 +13,7 @@ from models.blocklist import TokenBlocklist
 
 app = Flask(__name__)
 app.secret_key = "secret"
+app.config['PROPAGATE_EXCEPTIONS'] = True
 
 
 # For Production URI
