@@ -1,5 +1,3 @@
-import sqlite3
-from db import Connection
 from db import db
 
 
@@ -20,7 +18,11 @@ class ItemModel(db.Model):
 
 
     def json(self):
-        return {'name': self.name,'price': self.price}
+        return {
+                'id':self.id,
+                'name': self.name,
+                'store_id':self.store_id,
+                'price': self.price}
 
     @classmethod
     def find_by_name(cls,name):

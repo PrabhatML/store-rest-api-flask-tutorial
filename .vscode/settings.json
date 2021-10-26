@@ -3,5 +3,15 @@
         "helloflaskrest"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "files.autoSaveDelay": 4000,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "flask basic",
+            "database": "${workspaceFolder:store-rest-api-flask-tutorial}/data.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
 }

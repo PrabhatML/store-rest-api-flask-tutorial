@@ -1,0 +1,43 @@
+{
+    "openapi":"3.0.0",
+    "info":{
+        "description":"sean",
+        "version":"1.0.0",
+        "title":"Hello_flask",
+        "license":{
+            "name":"MIT",
+            "url":"https://opensource.org/licenses/MIT"
+        }
+    },
+    "servers":[
+        {
+            "url":"/items"
+        }
+    ],
+    "tags":[
+        {
+            "name": "Item Request",
+            "description":"Example API for requesting and return item requests"
+        }
+    ],
+    "paths":{
+       "/request":{
+           "get":{
+               "tags":[
+                   "Book Request"
+               ]
+           }
+       }
+    },
+    "components":{
+        "schemas":{
+            "id":{
+                "properties":{
+                    "uuid":{
+                        "type":"string"
+                    }
+                }
+            }
+        }
+    }
+}
